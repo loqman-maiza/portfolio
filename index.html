@@ -456,7 +456,57 @@
             .projects-grid { grid-template-columns: 1fr; }
             .section-title { font-size: 2.5rem; }
         }
+
+                    .nav{
+              position:fixed;
+              top:0;
+              width:100%;
+              padding:25px 7%;
+              display:flex;
+              justify-content:space-between;
+              align-items:center;
+              background:rgba(0,0,0,0.35);
+              backdrop-filter:blur(12px);
+              z-index:100;
+            }
+
+            .nav-logo{
+              font-size:1.2rem;
+              font-weight:900;
+              letter-spacing:2px;
+            }
+
+            .nav-links a{
+              margin-left:30px;
+              text-decoration:none;
+              color:white;
+              font-weight:600;
+              transition:0.3s;
+            }
+
+        .nav-links a:hover{
+          color:#00ff88;
+        }
+        
+@media (max-width:768px){
+  .nav-links{
+    display:none;
+  }
+}
+
+
     </style>
+<nav class="nav">
+  <div class="nav-logo">LOQMAN</div>
+  <div class="nav-links">
+    <a href="#about">À propos</a>
+    <a href="#skills">Compétences</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+
 </head>
 <body>
     <div class="cursor"></div>
