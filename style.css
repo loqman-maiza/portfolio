@@ -572,6 +572,10 @@ body {
     animation: pulse 2s ease-in-out infinite;
 }
 
+.project-image.has-image::before {
+    display: none;
+}
+
 .project-overlay {
     position: absolute;
     top: 0;
